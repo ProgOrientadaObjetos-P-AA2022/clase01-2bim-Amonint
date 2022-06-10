@@ -40,9 +40,13 @@ public class Ejecutor {
         Vehiculo vec2 = new Vehiculo("2");
         Vehiculo vec3 = new Vehiculo("3");
         Vehiculo vec4 = new Vehiculo("4");
+        vec1.establecercostoVehiculos(10.00);
+        vec2.establecercostoVehiculos(10.00);
+        vec3.establecercostoVehiculos(10.00);
+        vec4.establecercostoVehiculos(10.00);
 
         Vehiculo [] vehiculos = {vec1,vec2,vec3,vec4};
-        Empresa miempresa = new Empresa();
+        Vehiculo miVehiculo= new Vehiculos();
         miempresa.establecerNombre("empresa1");
         miempresa.establecerEdificios(edificio);
         miempresa.establecercostoBienesInmuebles();

@@ -4,6 +4,9 @@ public class Vehiculo {
     private String nombre;
     private Vehiculo [] vehiculos;
     private double costoVehiculos;
+    public Vehiculo(String string) {
+    }
+
     public void establecerNombre(String m){
         nombre = m;
     }
@@ -20,7 +23,7 @@ public class Vehiculo {
         return vehiculos;
     }
     
-    public void establecercostoVehiculos(){
+    public void establecercostoVehiculos(double d){
        double suma = 0;
        for(int i=0;i<obtenerVehiculos().length;i++){
         suma= suma + obtenerVehiculos()[i].obtenercostoVehiculos(); 
